@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/botao.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de clientes</h1>
+    </header>
+
+    <div class="container">
+        <button class="botao azul" id="cadastrarCliente">CADASTRAR CLIENTE</button>
+        <table class="tabela" id="tbCliente">
+            <thead> 
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal">
+        <div class="modal_content">
+            <header class="modal_header"> 
+                <h2>Novo Cliente</h2>
+                <span class="modal_fechar" id="btFecharModal">&#10006;</span>
+            </header> 
+            <form id="form" class="modal_form">
+                <input type="text" id="nome" class="modal_field" data-flag="novo"  data-indice="0" placeholder="Nome do Cliente" required>
+                <input type="email" id="email" class="modal_field" placeholder="e-mail do Cliente" required>
+                <input type="text" id="celular" class="modal_field" placeholder="Celular do Cliente" required>
+                <input type="text" id="cidade" class="modal_field" placeholder="Cidade do Cliente" required>
+            </form>
+            <footer class="modal_footer">
+                <button class="botao verde" id="btSalvar">Salvar</button>
+                <button class="botao azul" id="btCancelar">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

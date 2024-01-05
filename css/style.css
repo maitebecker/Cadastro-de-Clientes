@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --fonte-principal: "Poppins";
+    --cor-de-fundo: #E5E5E5;
+    --amarelo: ##FEAF00;
+    --cinza: #ACACAC;
+    --branco: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body>header {
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    margin-left: 2em;
+    border-bottom: 1px solid rgba(206, 205, 205, 0.911);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-size: 15px;
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 2em;
+    width: 80%;
+}
+
+
+.tabela {
+    width: 100%;
+    text-align: left;
+}
+
+.tabela tr{
+    height: 30px;
+}
+
+.tabela th{
+    height: 30px;
+    padding-left: 1em;
+}
+
+.tabela td{
+    height: 30px;
+    padding-left: 20px;
+}
+
+thead {
+    color: var(--cinza);
+}
+
+tbody tr{
+    background-color: var(--branco);
+}
